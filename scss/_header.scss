@@ -1,0 +1,36 @@
+header {
+    height: 8.8rem;
+    display: flex;
+    align-items: center;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            margin-top: -5px;
+        }
+
+        nav {
+            @include p3;
+            display: flex;
+            gap: 5rem;
+
+            a {
+                color: $brand-color;
+                font-weight: 500;
+
+            }
+
+        }
+
+        .btn-primary {
+            background: $brand-color;
+            border-radius: 32px;
+            @include p3;
+            color: #FFFFFF;
+            padding: 1.3rem 3.3rem;
+        }
+    }
+}

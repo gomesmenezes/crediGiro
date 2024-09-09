@@ -1,0 +1,7 @@
+.btn-primary {
+    background: $brand-color;
+    border-radius: 32px;
+    @include p3;
+    color: #FFFFFF;
+    padding: 1.3rem 3.3rem;
+}

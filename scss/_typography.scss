@@ -1,0 +1,45 @@
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6.4rem;
+    font-weight: 600;
+    line-height: 72px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 72px;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6.4rem;
+    font-weight: 600;
+    line-height: 72px;
+}
+
+@mixin p1 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 27px;
+}
+
+@mixin p2 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 24px;
+}
+
+@mixin p3 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 21px;
+}

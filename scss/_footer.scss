@@ -1,0 +1,42 @@
+footer {
+    margin-bottom: 10rem;
+    .container {
+        background: #171717;
+        padding: 8rem;
+        border-radius: 32px;
+        color: #FFFFFF;
+        .box-top {
+            border-bottom: 2px solid $gray-500;
+            .box-big {
+                padding-bottom: 8rem;
+                display: flex;
+                gap: 20rem;
+                .left {
+                    h3 {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 6.4rem;
+                        max-width: 50rem;
+                    }
+                    p {
+                        @include p2;
+                        color: $gray-500;
+                    }
+                }
+            }
+            
+        }
+
+        .box-bottom {
+            margin-top: 8rem;
+            display: flex;
+            justify-content: space-between;
+            .b-b-right {
+                display: flex;
+                gap: 2.5rem;
+                .medias-column {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
