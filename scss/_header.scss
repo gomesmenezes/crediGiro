@@ -1,3 +1,5 @@
+@import 'mixins';
+
 header {
     height: 8.8rem;
     display: flex;
@@ -7,6 +9,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
 
         .logo {
             margin-top: -5px;
@@ -20,17 +23,31 @@ header {
             a {
                 color: $brand-color;
                 font-weight: 500;
-
+                transition: all 0.3s ease;
+                &:hover {
+                    font-weight: bold;
+                    color: #46945b;
+                }
             }
-
+            @include responsive(750px) {
+                display: none;
+            }
         }
 
         .btn-primary {
             background: $brand-color;
             border-radius: 32px;
+            cursor: pointer;
             @include p3;
             color: #FFFFFF;
             padding: 1.3rem 3.3rem;
+            transition: background 0.5s ease;
+            &:hover {
+                background: #46945b;
+            }
+        }
+        @include responsive(1250px) {
+            padding: 1.2rem;
         }
     }
 }

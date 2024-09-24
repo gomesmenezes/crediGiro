@@ -11,7 +11,7 @@ footer {
             border-bottom: 2px solid $gray-500;
 
             .box-big {
-                padding-bottom: 8rem;
+                padding-bottom: 4rem;
                 display: flex;
                 gap: 20rem;
 
@@ -39,14 +39,17 @@ footer {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+
                     p {
                         @include p2;
                     }
+
                     form {
                         display: flex;
                         gap: 1.8rem;
                         margin: 2.4rem 0;
                         justify-content: center;
+
                         input {
                             max-width: 30rem;
                             width: 100%;
@@ -55,23 +58,35 @@ footer {
                             padding-top: 1.7rem;
                             padding-bottom: 1.7rem;
                             padding-left: 2.3rem;
+                            padding-right: 2.3rem;
                             color: #FFFFFF;
                             @include p2;
+
                             &::placeholder {
                                 @include p2;
                                 color: #FFFFFF;
                             }
                         }
+
+                        button {
+                            transition: background 0.4s ease;
+
+                            &:hover {
+                                background: #45955c;
+                            }
+                        }
                     }
+
                     #politc {
                         max-width: 33.5rem;
                         width: 100%;
                         font-size: 1rem;
                         color: $gray-500;
+
                         a {
                             color: #FFFFFF;
                         }
-                    
+
                     }
                 }
             }
@@ -103,14 +118,17 @@ footer {
                     flex-direction: column;
                     justify-content: center;
                     gap: 1rem;
+
                     .top-column {
                         font-size: 1.8rem;
                     }
+
                     .description {
                         font-size: 1.2rem;
                         color: $gray-500;
                         transition: color 0.4s ease-in-out;
                         cursor: pointer;
+
                         &:hover {
                             color: $gray-700;
                         }
@@ -125,14 +143,14 @@ footer {
 
                     a {
                         img {
-                            transition: filter 0.3s ease; 
-                
+                            transition: filter 0.3s ease;
+
                             &:hover {
-                                filter: brightness(0.7); 
+                                filter: brightness(0.7);
                             }
                         }
                     }
-                    
+
                 }
             }
         }
@@ -143,6 +161,7 @@ footer {
     margin-bottom: 5rem;
     text-align: center;
     @include p2;
+
     p {
         color: #000000;
     }

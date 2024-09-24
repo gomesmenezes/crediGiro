@@ -29,6 +29,16 @@
                 display: inline-block;
                 margin-top: 7.4rem;
                 margin-bottom: 7.5rem;
+
+                .btn-primary {
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        font-weight: bold;
+                        background: #4ea566;
+                    }
+                }
             }
 
             .proof {
@@ -39,6 +49,10 @@
                     .proof-top {
                         display: flex;
                         gap: 1.4rem;
+
+                        h4 {
+                            font-size: 6rem;
+                        }
                     }
 
                     p {
@@ -102,6 +116,11 @@ section.s-box {
                 line-height: 27px;
                 max-width: 18.5rem;
                 height: 3.7rem;
+                transition: background 0.4s ease;
+
+                &:hover {
+                    background: #46965d;
+                }
             }
         }
     }
